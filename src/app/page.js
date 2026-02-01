@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
-import { fetchRecommendations } from "@/store/recommendationthunk";
+import { fetchRecommendations } from "../store/recommendationthunk";
 import { fetchmoviedetails } from "../../utils/fetchmovies";
-import Loader from "@/components/Loader";
+import Loader from "../components/Loader";
 import { ChevronDown, Search, BarChart3 } from 'lucide-react';
 
 export default function Page() {
@@ -70,7 +70,7 @@ export default function Page() {
   return (
     <div className="max-w-6xl mx-auto px-4 md:px-6 py-10 min-h-screen">
       <header className="mb-10 text-center md:text-left">
-        <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-yellow-400 via-orange-400 to-purple-500 bg-clip-text text-transparent italic tracking-tighter">
+        <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-yellow-400 via-orange-400 to-purple-500 bg-clip-text text-transparent tracking-tighter">
           CineMetric
         </h1>
         <p className="text-neutral-400 mt-3 text-sm md:text-base font-medium">

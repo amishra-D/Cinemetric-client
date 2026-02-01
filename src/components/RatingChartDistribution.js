@@ -9,7 +9,7 @@ import {
   CartesianGrid
 } from "recharts";
 
-import ratingDist from "@/json-files/rating-dist.json";
+import ratingDist from "../json-files/rating-dist.json";
 
 export default function RatingDistributionChart() {
   const data = Object.entries(ratingDist).map(([rating, count]) => ({

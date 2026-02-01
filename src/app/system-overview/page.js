@@ -1,14 +1,14 @@
 import React from "react";
 import { Download } from "lucide-react";
-import Card from "@/components/Card";
-import RatingDistributionChart from "@/components/RatingChartDistribution";
+import Card from "../../components/Card";
+import RatingDistributionChart from "../../components/RatingChartDistribution";
 
 function Page() {
   return (
     <div className="bg-neutral-950 min-h-screen w-full text-white">
       
       <div className="max-w-6xl mx-auto px-6 pt-10">
-        <h1 className="text-4xl font-bold bg-gradient-to-r from-yellow-400 to-red-500 bg-clip-text text-transparent">
+        <h1 className="text-4xl pb-1 md:text-5xl font-extrabold bg-gradient-to-r from-yellow-400 via-orange-400 to-purple-500 bg-clip-text text-transparent tracking-tighter">
           System Overview
         </h1>
         <p className="text-neutral-400 mt-2">
