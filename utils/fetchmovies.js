@@ -1,7 +1,5 @@
 import axios from "axios";
-
-// const BACKEND_URL = "https://vitreum-unventilated-curt.ngrok-free.dev";
- const BACKEND_URL="http://127.0.0.1:8000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://127.0.0.1:8000"
 const OMDB_URL = "https://www.omdbapi.com/";
 const OMDB_KEY = "57f54e16";
 

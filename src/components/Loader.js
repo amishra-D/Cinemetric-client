@@ -45,7 +45,7 @@ function Loader() {
   useEffect(() => {
     const timer = setInterval(() => {
       setStage((prev) => (prev + 1) % sections.length);
-    }, 1500); // Increased time slightly to allow eyes to read the steps
+    }, 1500);
     return () => clearInterval(timer);
   }, []);
 
@@ -66,7 +66,6 @@ function Loader() {
                     : "border-zinc-800 opacity-40 scale-100"
                 }`}
               >
-                {/* Scanning Light Effect for Active Stage */}
                 {isActive && (
                   <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-yellow-400 to-transparent animate-scan" />
                 )}
