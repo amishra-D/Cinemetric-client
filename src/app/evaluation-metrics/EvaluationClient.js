@@ -3,8 +3,8 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useSearchParams } from "next/navigation";
-import { fetchRecommendations } from "@/store/recommendationthunk";
-import Loader from "../components/Loader";
+import { fetchRecommendations } from "../../store/recommendationthunk";
+import Loader from "../../components/Loader";
 
 export default function EvaluationClient() {
   const dispatch = useDispatch();
