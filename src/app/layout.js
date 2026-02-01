@@ -1,7 +1,15 @@
 import "./globals.css";
 import ReduxProvider from "../providers/ReduxProvider";
 import Sidebar from "../components/Sidebar";
-
+export const metadata = {
+  title: "CineMetric - ML-Powered Movie Recommender",
+  description: "Discover movies with our hybrid recommendation system powered by machine learning.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

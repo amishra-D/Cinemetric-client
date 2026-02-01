@@ -15,7 +15,7 @@ export const recommendmovies = async ({
   alpha = 0.5,
   model_name = "Hybrid",
 }) => {
-  print("api hit in reccomend movies");
+  console.log("api hit in recommend movies");
   const res = await axios.get(`${BACKEND_URL}/recommend`, {
     params: {
       movie: movietitle,

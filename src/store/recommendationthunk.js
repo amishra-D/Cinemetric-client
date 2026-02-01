@@ -4,7 +4,7 @@ export const fetchRecommendations = createAsyncThunk(
   "recommendation/fetch",
   async ({ movietitle, top_n, alpha,model_name }, { rejectWithValue }) => {
     try {
-        print("api hit in thunk");
+      console.log("api hit in thunk");
       const data = await recommendmovies({
         movietitle,
         top_n,
