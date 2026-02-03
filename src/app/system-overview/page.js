@@ -2,6 +2,16 @@ import React from "react";
 import { Download } from "lucide-react";
 import Card from "../../components/Card";
 import RatingDistributionChart from "../../components/RatingChartDistribution";
+const datasets = [
+  {
+    name: "Movielens 1M",
+    file: "/downloads/movielens-1m.zip",
+  },
+  {
+    name: "TMDB 5000",
+    file: "/downloads/tmdb-5000.zip",
+  },
+];
 
 function Page() {
   return (
@@ -19,18 +29,20 @@ function Page() {
       <div className="max-w-6xl mx-auto px-6 mt-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
           
-          {["Movielens 1M", "TMDB 5000"].map((item) => (
-            <div
-              key={item}
+          {datasets.map((item) => (
+            <a
+              key={item.name}
+              href={item.file}
+              download
               className="bg-neutral-900 border border-neutral-800 p-3 rounded-lg flex justify-between items-center text-sm font-semibold
                          hover:border-yellow-500/40 hover:bg-neutral-800 transition"
             >
-              <p>{item}</p>
+              <p>{item.name}</p>
               <Download
                 size={16}
                 className="cursor-pointer text-neutral-400 hover:text-yellow-400"
               />
-            </div>
+            </a>
           ))}
 
         </div>
